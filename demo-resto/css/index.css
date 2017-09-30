@@ -1,0 +1,255 @@
+.index-banner{
+	position: relative;
+}
+
+.index-banner .index-banner-bg{
+	overflow: hidden;
+	height: 574px;
+}
+
+.index-banner-text{
+	position: absolute;
+	top: 210px;
+	left: 50%;
+	margin-left: -388px;
+	
+}
+
+.index-banner-text .text-logo{
+	width: 776px;
+	height: 114px;
+	background: url(../image/text-logo.png);
+}
+
+.index-banner-text .text-line{
+	position: relative;
+	margin-top: 21px;
+	text-align:center;
+	font-size: 16px;
+	font-family: Aleo;
+	color: #fff;
+}
+
+.index-banner-text .line{
+	display: inline-block;
+	width: 40px;
+	border-bottom: 1px solid #fff;
+	vertical-align: middle;
+}
+
+.index-banner-text .text-line span{
+	margin: 0 27px;
+}
+
+.index-menu{
+	position: relative;
+	overflow: hidden;
+}
+
+.index-menu .menu-tips{
+	position: absolute;
+	left: 50%;
+	top: 0px;
+	margin-left: -78px;
+	height: 71px;
+	width: 156px;
+	background-color: #f34949;
+	font-size: 20px;
+	font-family: Aleo;
+	font-weight: bold;
+	text-align: center;
+	line-height: 61px;
+	color: #fff;
+}
+
+.index-menu .menu-tips:after{
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-left: 78px solid transparent;
+	border-right: 78px solid transparent;
+	border-bottom: 10px solid #fff;
+
+}
+
+.index-menu .menu-list{
+	margin-top: 150px;
+	overflow: hidden;
+}
+
+.menu-list ul{
+	width: 1174px;
+}
+
+.menu-list .list-item{
+	float: left;
+	margin-right: 62px;
+	margin-bottom: 60px;
+}
+
+.index-menu .title{
+	display: inline-block;
+	float: left;
+	width: 230px;
+	height: 36px;
+}
+
+.index-menu .title h4{
+	font-size: 16px;
+	font-family: aleo;
+	color: #555;
+}
+
+.index-menu .title p{
+	margin-top: 8px;
+	color:#b7b7b7;
+	font-size: 12px;
+	font-family: aleo;
+}
+.index-menu .line{
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 43px;
+	width: 192px;
+	border: 1px solid #e3e1e1;
+	float: left;
+}
+
+.index-menu .price{
+	display: inline-block;
+	margin-right: 28px;
+	font-size: 16px;
+	color: #555;
+	font-family: aleo;
+}
+
+.index-menu .menu-more-btu{
+	margin: 30px auto 0px;
+	display: block;
+	width: 130px;
+	height: 32px;
+	border: 1px solid #d7d5d5;
+	color:#b7b7b7;
+	font-family: Aloe;
+	text-align: center;
+	line-height: 32px;
+}
+/* .index-menu .menu-more-btu:hover{
+ 	text-decoration: none;
+ } */ 
+
+.index-panel{
+ 	overflow: hidden;
+ 	/* clear: both; */
+ }
+
+.index-panel-header{
+	overflow: hidden;
+	margin-top: 100px;
+ }
+
+.index-panel-header span{
+ 	float: left;
+ 	font-size: 20px;
+ 	font-weight: bold;
+ 	font-family: Aloe;
+ 	color: #3b3b3b;
+ 	margin-right: 19px; 
+ }
+
+.index-panel-header .line{
+	float: left;
+	margin-top: 13px;
+	width: 200px;
+	border-bottom:1px solid #e5e3e3;
+	line-height: 26px;
+}
+
+.index-panel-header .btn-group{
+	float: right;
+}
+
+.index-panel-header .btn{
+	display: inline-block;
+	margin-left: 11px;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background-color: #dedede;
+}
+
+.index-panel-header .active{
+	background: #9b9b9b;
+}
+
+.index-panel-body{
+	overflow: hidden;
+	margin-top: 80px;
+	width: 4640px;
+}
+
+.index-food-list{
+	overflow: hidden;
+	float: left;
+	width: 1160px;
+}
+
+.index-food-list .list-item{
+	float: left;
+	margin-right: 60px;
+	width: 230px;
+}
+
+.list-item .item-name{
+	float: left;
+	margin-top: 30px;
+}
+
+.list-item .item-name a{
+	font-size: 16px;
+	color: #555;
+	font-family: Aloe;
+}
+
+.list-item .item-price{
+	float: right;
+	margin-top: 30px;
+}
+
+.list-item  .item-price span{
+	font-size: 16px;
+	color: #555;
+	font-family: Aloe;
+}
+.list-item .stars{
+	overflow: hidden;
+	margin-top: 61px;
+	clear: both;
+}
+
+.stars li{
+	float: left;
+	margin-right: 5px;
+	width: 12px;
+	height: 11px;
+}
+
+.list-item .star-down{
+	background-image: url(../image/star-down.png);
+}
+
+.list-item .star-active{
+	background-image: url(../image/star-active.png);
+}
+
+.index-panel-body .pic-col{
+	float: left;
+	display: block;
+}
+
+.index-panel-body .pic-row{
+	display: block;
+}
