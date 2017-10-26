@@ -1,0 +1,95 @@
+html {
+    font-size: 625%;
+}
+body {
+    margin: 0;
+}
+
+header {
+	height: 0.46rem;
+	padding: 0 0.1rem;
+	background-color: #5fc0cd;
+}
+
+header a {
+	font-size: 0.14rem;
+	line-height: 0.46rem;
+	color: #fff;
+	text-decoration: none;
+}
+
+header .close{
+	float: left;
+}
+
+header .register{
+	float: right;
+}
+
+header h1{
+	margin: 0 0.38rem;
+	font-size: 0.16rem;
+	text-align: center;
+	line-height: 0.46rem;
+	color: #fff;
+}
+
+.login {
+	overflow: hidden;
+	background-color: #eeeff3;
+}
+
+.tel {
+	margin-top: 0.1rem;
+	width: 100%;
+	height: 0.5rem;
+	background: url(img/phone.png);
+	background-size: 0.59rem 0.5rem;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+.login input {
+	margin-left: 0.8rem;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	font-size: 0.14rem;
+	line-height:  0.5rem;
+}
+
+.login input:focus {
+    outline:none;
+}
+
+.pwd {
+	margin-top: 0.1rem;
+	width: 100%;
+	height: 0.5rem;
+	background: url(img/password.png);
+	background-size: 0.59rem 0.5rem;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+.login-btn{
+	margin-top: 0.1rem;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	height: 0.5rem;
+	font-size: 0.16rem;
+	letter-spacing: 0.16rem;
+	color: #fff;
+	background-color: #5fc0cd;
+}
+.fpwd {
+	padding-right: 0.12rem;
+	font-size: 0.12rem;
+	text-decoration:underline;
+	text-align: right; 
+}
+
+.fpwd a{
+	color: #5fc0cd;
+}
