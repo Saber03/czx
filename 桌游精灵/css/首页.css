@@ -14,7 +14,7 @@ a {
 
 header{
 	display: flex;
-	flex: 0 0 0.88rem;
+	height: 0.88rem;
 	background-color: #29bde0;
 	background-image: url(../img/nav-bar.png);
 	background-repeat: no-repeat;
@@ -23,11 +23,10 @@ header{
 }
 
 main {
-	overflow-x: hidden;
-	overflow-y: auto;
+	overflow: auto;
 	display: flex;
 	flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 	align-items: center;
     flex: 1;
     padding: 0.28rem 0.34rem;
@@ -39,34 +38,38 @@ main {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
-	flex: 0 0 1.18rem;
+    flex: 0 0 1.18rem;
 	border: 1px solid #d7d7d7;
-	font-size: 0.35rem;
+	width: 100%;
 	background-color: #fff;
 }
 
+.lastgame a {
+	font-size: 0.35rem;
+	color: #9a9a9a;
+}
+
 .gamelist {
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	flex: 1;
+    flex: 1 0 auto;
+	position: relative;
 	margin-top: 0.2rem;
 	border: 1px solid #d7d7d7;
 	width: 100%;
-	flex: 1;
 	background-color: #fff;
 }
 
 .gamename {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	flex: 0 0 0.94rem;
 	border-bottom: 1px solid #fbb435;
 	width: 100%;
-	flex: 0 0 0.94rem;
 	font-size: 0.38rem;
 	color: #fbb435;
 }
@@ -74,7 +77,9 @@ main {
 .gameversion {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	flex: 0 0 auto;
 	width: 80%;
 }
 
@@ -83,9 +88,9 @@ main {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	flex: 0 1 1.34rem;
 	margin-bottom: 0.26rem;
 	width: 100%;
+	height: 1.34rem;
 	font-size: 0.32rem;
 	color: #fff;
 	background-color: #69d1e9;
@@ -116,7 +121,7 @@ main {
 	width: 0.18rem;
 	height: 0.18rem;
 	border-radius: 50%;
-	background-color: #f0f0f0;
+	background-color: #9a9a9a;
 }
 
 .dot li:first-child {
