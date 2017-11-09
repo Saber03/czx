@@ -1,0 +1,124 @@
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+header{
+	display: flex;
+	flex: 0 0 0.88rem;
+	background-color: #29bde0;
+	background-image: url(../img/nav-bar.png);
+	background-repeat: no-repeat;
+	background-position: 0.22rem center;
+	background-size: 0.34rem 0.27rem;
+}
+
+main {
+	overflow-x: hidden;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+	align-items: center;
+    flex: 1;
+    padding: 0.28rem 0.34rem;
+	background-color: #f0f0f0;
+}
+
+.lastgame {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex: 0 0 1.18rem;
+	border: 1px solid #d7d7d7;
+	font-size: 0.35rem;
+	background-color: #fff;
+}
+
+.gamelist {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	flex: 1;
+	margin-top: 0.2rem;
+	border: 1px solid #d7d7d7;
+	width: 100%;
+	flex: 1;
+	background-color: #fff;
+}
+
+.gamename {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #fbb435;
+	width: 100%;
+	flex: 0 0 0.94rem;
+	font-size: 0.38rem;
+	color: #fbb435;
+}
+
+.gameversion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+}
+
+.gameversion a {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex: 0 1 1.34rem;
+	margin-bottom: 0.26rem;
+	width: 100%;
+	font-size: 0.32rem;
+	color: #fff;
+	background-color: #69d1e9;
+}
+
+.gameversion span {
+	font-size: 0.26rem;
+}
+
+.next-arrow {
+	position: absolute;
+	top: 50%;
+	right: 0.1rem;
+	margin-top: -0.28rem;
+	border: 0.28rem solid transparent;
+	border-right: 0;
+	border-left-color: #fbb435;
+}
+
+.dot ul {
+	margin: 0;
+	padding: 0;
+}
+
+.dot li {
+	display: inline-block;
+	margin-left: 0.1rem;
+	width: 0.18rem;
+	height: 0.18rem;
+	border-radius: 50%;
+	background-color: #f0f0f0;
+}
+
+.dot li:first-child {
+	background-color: #69d1e9;
+}
