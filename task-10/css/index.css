@@ -179,18 +179,18 @@ header a {
 }
 
 .title {
-	padding: 50px 0 20px 0;
+	padding: 50px 15px 15px 15px;
 	font-size: 22px;
 }
 
 @media only screen and (max-width:767px) {
 	.title {
-		margin-left: 15px;
 		font-size: 18px;
 	}
 }
 
 .title p {
+	margin-bottom: 0;
 	padding-left: 15px;
 	border-left: 3px solid #337ab7;
 }
