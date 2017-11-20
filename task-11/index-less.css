@@ -1,0 +1,83 @@
+html {
+  font-size: 625%;
+}
+body {
+  margin: 0;
+}
+header {
+  height: 0.46rem;
+  padding: 0 0.1rem;
+  background-color: #5fc0cd;
+}
+header a {
+  font-size: 0.14rem;
+  line-height: 0.46rem;
+  text-decoration: none;
+  color: #fff;
+}
+header .close-btn {
+  float: left;
+}
+header .regist-btn {
+  float: right;
+}
+header h1 {
+  margin: 0 0.38rem;
+  font-size: 0.16rem;
+  line-height: 0.46rem;
+  text-align: center;
+  color: #fff;
+}
+.login-form {
+  overflow: hidden;
+  background-color: #eeeff3;
+}
+.login-form .tel-ipt {
+  width: 100%;
+  height: 0.5rem;
+  margin-top: 0.1rem;
+  background: url('img/phone.png');
+  background-repeat: no-repeat;
+  background-size: 0.59rem 0.5rem;
+  background-color: #fff;
+}
+.login-form .pwd-ipt {
+  width: 100%;
+  height: 0.5rem;
+  margin-top: 0.1rem;
+  background: url('img/password.png');
+  background-repeat: no-repeat;
+  background-size: 0.59rem 0.5rem;
+  background-color: #fff;
+}
+.login-form input {
+  width: 100%;
+  margin-left: 0.8rem;
+  padding: 0;
+  border: 0;
+  font-size: 0.14rem;
+  line-height: 0.5rem;
+}
+.login-form input:focus {
+  outline: none;
+}
+.login-form .login-btn {
+  width: 100%;
+  height: 0.5rem;
+  margin-top: 0.1rem;
+  padding: 0;
+  border: 0;
+  font-size: 0.16rem;
+  letter-spacing: 0.16rem;
+  color: #fff;
+  background-color: #5fc0cd;
+}
+.fpwd {
+  padding-right: 0.12rem;
+  font-size: 0.12rem;
+  text-decoration: underline;
+  text-align: right;
+}
+.fpwd a {
+  color: #5fc0cd;
+}
