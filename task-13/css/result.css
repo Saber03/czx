@@ -1,0 +1,95 @@
+header a {
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url(../img/result.png) no-repeat;
+  background-size: 3.5rem 2.84rem;
+}
+header .home-btn {
+  background-position: 0 -0.4rem;
+}
+header .info-btn {
+  background-position: 0 0;
+}
+header p {
+  margin: 0;
+  font-size: 0.34rem;
+  color: #fff;
+}
+main {
+  margin: 0 -0.4rem -1.28rem -0.4rem;
+  padding-bottom: 1.28rem;
+  background-color: #29bde0;
+}
+main .victory {
+  margin-top: 0.25rem;
+  padding: 0 0.7rem;
+  flex: 0 0 2.04rem;
+  background: url(../img/result.png) no-repeat;
+  background-size: 3.5rem 2.84rem;
+  background-position: center -0.8rem;
+}
+main .notice {
+  padding: 0.2rem 0.7rem 0 0.7rem;
+  font-size: 0.33rem;
+  color: #ffc865;
+}
+main .result {
+  padding: 0.6rem 0.7rem 0.25rem 0.7rem;
+  font-size: 0.26rem;
+  color: #fff;
+}
+main .result ul span {
+  display: inline-block;
+  float: left;
+  padding-right: 0.5rem;
+  min-width: 33.333%;
+}
+main .result ul p {
+  clear: both;
+  margin: 0;
+}
+main .list {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  flex-wrap: wrap;
+  flex: 0 0 1.68rem;
+  padding: 0 0.7rem;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+main .list .num {
+  flex-basis: 50%;
+  font-size: 0.3rem;
+}
+main .list .time {
+  flex-basis: 50%;
+  font-size: 0.2rem;
+  text-align: right;
+  color: #c7c7c7;
+}
+main .list .night,
+main .list .day {
+  font-size: 0.26rem;
+  color: #a6a6a6;
+}
+footer {
+  z-index: 1;
+}
+footer .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 2.7rem;
+  height: 100%;
+  border-radius: 0.1rem;
+  font-size: 0.4rem;
+  color: #fff;
+}
+footer .btn:first-child {
+  background-color: #f66f6f;
+}
+footer .btn:last-child {
+  background-color: #fbb435;
+}

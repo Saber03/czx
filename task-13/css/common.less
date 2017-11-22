@@ -1,0 +1,39 @@
+.disflex(@flex-dir:row, @jus-con:space-between) {
+	display: flex;
+	flex-direction: @flex-dir;
+	justify-content: @jus-con;
+	overflow: auto;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	.disflex(column, space-between);
+}
+
+header {
+	.disflex(row, space-between);
+	flex-shrink: 0;
+	align-items: center;
+	overflow: hidden;
+	height: 0.88rem;
+	padding: 0 0.2rem;
+	background-color: #29bde0;
+}
+
+main {
+	.disflex(column, space-between);
+	flex-grow: 1;
+	padding: 0 0.4rem;
+}
+
+footer {
+	.disflex(row, space-between);
+	flex-shrink: 0;
+	align-items: center;
+	height: 1.28rem;
+	padding: 0.2rem;
+	background-color: rgba(41, 189, 224, 0.48);	/*opacity: 0.48;*/
+}
