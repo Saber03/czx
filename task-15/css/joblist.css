@@ -1,0 +1,186 @@
+@import url(header.css);
+@import url(footer.css);
+/* 路径 */
+.path {
+  margin: 30px 0;
+}
+.path span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.path span:last-child {
+  color: #29b078;
+}
+/* 职业方向 */
+.choise {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.5);
+}
+.choise a {
+  font-size: 14px;
+  color: #000;
+}
+.choise a:hover {
+  background-color: #29b078;
+  color: #fff;
+}
+.choise li {
+  margin-right: 30px;
+}
+.choise li:first-child a {
+  margin-right: -10px;
+  color: #999;
+  cursor: default;
+}
+.choise li:first-child a:hover {
+  background-color: transparent;
+  color: #999;
+}
+/* 前端开发方向 */
+.web > h1,
+.java > h1,
+.support > h1 {
+  margin: 0;
+  padding: 30px 0;
+  border-bottom: 1px solid #999;
+  font-size: 16px;
+}
+.web .list,
+.java .list,
+.support .list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.web .item,
+.java .item,
+.support .item {
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 48px;
+  padding: 20px 10px;
+  border: 1px solid rgba(153, 153, 153, 0.5);
+  width: 30%;
+}
+@media screen and (max-width: 767px) {
+  .web .item,
+  .java .item,
+  .support .item {
+    width: 100%;
+  }
+}
+.web .item-head,
+.java .item-head,
+.support .item-head {
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+.web .item-head img,
+.java .item-head img,
+.support .item-head img {
+  float: left;
+  width: 30%;
+}
+.web .item-head > div,
+.java .item-head > div,
+.support .item-head > div {
+  overflow: hidden;
+  padding-left: 10px;
+}
+.web .item-head h1,
+.java .item-head h1,
+.support .item-head h1 {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+}
+.web .item-head p,
+.java .item-head p,
+.support .item-head p {
+  margin: 0;
+  font-size: 14px;
+}
+.web .item-main table,
+.java .item-main table,
+.support .item-main table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  border-bottom: hidden;
+  font-size: 12px;
+  color: #999;
+}
+.web .item-main table tr,
+.java .item-main table tr,
+.support .item-main table tr {
+  height: 40px;
+}
+.web .item-main table img,
+.java .item-main table img,
+.support .item-main table img {
+  vertical-align: text-bottom;
+}
+.web .item-main .level td,
+.java .item-main .level td,
+.support .item-main .level td {
+  padding-left: 10px;
+}
+.web .item-main .salary td,
+.java .item-main .salary td,
+.support .item-main .salary td {
+  text-align: center;
+}
+.web .item-foot table,
+.java .item-foot table,
+.support .item-foot table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  font-size: 12px;
+  color: #999;
+}
+.web .item-foot table tr,
+.java .item-foot table tr,
+.support .item-foot table tr {
+  height: 40px;
+}
+.web .item-foot table td,
+.java .item-foot table td,
+.support .item-foot table td {
+  padding-left: 10px;
+}
+.web .item-foot .tip tr:first-child td,
+.java .item-foot .tip tr:first-child td,
+.support .item-foot .tip tr:first-child td {
+  font-size: 14px;
+  color: #000;
+}
+.web .item-hidden,
+.java .item-hidden,
+.support .item-hidden {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 45px;
+  display: none;
+  color: #fff;
+  background-color: rgba(61, 61, 61, 0.7);
+}
+.web .item-hidden h4,
+.java .item-hidden h4,
+.support .item-hidden h4 {
+  text-align: center;
+}
+.web .item:hover .item-hidden,
+.java .item:hover .item-hidden,
+.support .item:hover .item-hidden {
+  display: inline-block;
+}
+.support {
+  margin-bottom: 48px;
+}

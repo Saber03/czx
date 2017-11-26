@@ -1,0 +1,95 @@
+@import url(header.css);
+@import url(footer.css);
+/* 路径 */
+.path {
+  margin: 30px 0;
+}
+.path span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.path span:last-child {
+  color: #29b078;
+}
+/* 合作企业 */
+.cooperation {
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+/* 企业名称 */
+.company-list {
+  float: left;
+  width: 30%;
+  border: 1px solid rgba(153, 153, 153, 0.3);
+  border-radius: 5px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .company-list {
+    float: none;
+    width: auto;
+    margin-bottom: 30px;
+  }
+}
+.company-list h1 {
+  margin: 0;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+  font-size: 16px;
+}
+.company-list li {
+  margin: 30px 0;
+  color: #29b078;
+  cursor: pointer;
+}
+.company-list li:before {
+  content: '';
+  display: inline-block;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 1px solid #ff650e;
+}
+.company-list li:hover {
+  color: #ff650e;
+}
+.company-list li:hover:before {
+  background-color: #f9a372;
+}
+/* 企业信息 */
+.company-info {
+  float: right;
+  width: 65%;
+  border: 1px solid rgba(153, 153, 153, 0.3);
+  border-radius: 5px;
+}
+@media screen and (max-width: 767px) {
+  .company-info {
+    float: none;
+    width: auto;
+  }
+}
+.company-info .info-head {
+  overflow: hidden;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+.company-info .info-head img {
+  float: left;
+}
+.company-info .info-head span {
+  display: block;
+  overflow: hidden;
+  padding: 20px 70px 20px 0;
+  text-indent: 2em;
+  color: #999;
+}
+.company-info .info-main {
+  padding: 0 70px;
+}
+.company-info .info-main p {
+  margin: 40px 0;
+  text-indent: 2em;
+  color: #999;
+}

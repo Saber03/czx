@@ -1,0 +1,247 @@
+@import url(header.css);
+@import url(slider.css);
+@import url(footer.css);
+@font-color: #999;
+
+main {
+	background-color: #fafafa;
+}
+
+/* 高效·规范·人脉 */
+.summary {
+	overflow: hidden;
+	margin-top: 100px;
+
+	.bg(@bgi:'../img/img-wrap-1.png') {
+		background: url(@bgi) no-repeat center top;
+	}
+
+	.effective, .ruler, .relation, .count {
+		box-sizing: border-box;
+		float: left;
+		width: 25%;
+		padding: 60px 10px 0 10px;
+
+		@media screen and (max-width:767px) {
+			float: none;
+			width: 100%;
+			padding-bottom: 30px;
+			text-align: center;
+		}
+
+		p {
+			font-size: 18px;
+			text-align: center;
+		}
+
+		span {
+			font-size: 16px;
+			color: @font-color;
+		}
+
+	}
+
+	.effective {
+		.bg('../img/img-wrap-1.png');
+	}
+
+	.ruler {
+		.bg('../img/img-wrap-2.png');
+	}
+
+	.relation {
+		border-right: 1px dashed #999;
+		.bg('../img/img-wrap-3.png');
+
+		@media screen and (max-width:767px) {
+			border-right: 0;
+		}
+
+	}
+
+	.count {
+		p {
+			padding-left: 26px;
+			text-align: left;
+			color: #26a26f;
+			.bg('../img/img-wrap-4.png');
+			background-position: left center;
+
+			@media screen and (max-width:767px) {
+				display: inline-block;
+			}
+
+		}
+
+		div:first-child p {
+			margin-top: -18px;
+		}
+
+	}
+
+}
+
+/* 如何学习 */
+.study {
+	margin-top: 100px;
+
+	h1 {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.study-step {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		flex-grow: 0;
+		flex-shrink: 0;
+
+		.step {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			box-sizing: border-box;
+			width: 25%;
+			margin: 45px 0;
+
+			@media screen and (max-width:991px) {
+				width: 100%;
+			}
+
+			span:first-child {
+				display: inline-block;
+				flex-shrink: 0;
+				width: 70px;
+				height: 70px;
+				margin-right: 10px;
+				line-height: 70px;
+				text-align: center;
+				border-radius: 50%;
+				box-shadow: 0 0 5px rgba(153, 153, 153, 0.5);
+				color: #26a26f;
+				background-color: #fff;
+			}
+
+			span:nth-child(2) {
+				overflow: hidden;
+				text-align: center;
+				color: #999;
+			}
+
+			span:last-child {
+				display: inline-block;
+				flex-shrink: 0;
+				width: 33px;
+				height: 33px;
+				margin-left: 10px;
+				background: url(../img/next-arrow.png) no-repeat 95% center;
+			}
+
+		}
+
+	}
+
+}
+
+/* 战略合作伙伴 */
+.cooperation {
+	margin-top: 100px;
+
+	h1 {
+		margin: 0 0 62px 0;
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.company-list {
+		display: flex;
+		flex-direction: row;
+
+		@media screen and (max-width:991px) {
+			flex-direction: column;
+		}
+
+		a {
+			flex-shrink: 0;
+			width: 20%;
+			height: 178px;
+			background-color: #fff !important;
+			cursor: pointer;
+
+			@media screen and (max-width:991px) {
+				width: 100%;
+			}
+
+		}
+
+		a:hover {
+			z-index: 1;
+			box-shadow: 0 0 15px rgba(153, 153, 153, 0.5);
+		}
+
+		.bg(@bgi:'../img/company-alibaba.png') {
+			background: url(@bgi) no-repeat center;
+		}
+
+		.company-alibaba {
+			.bg('../img/company-alibaba.png');
+		}
+
+		.company-jinshanyun {
+			.bg('../img/company-jinshanyun.png');
+		}
+
+		.company-huanxin {
+			.bg('../img/company-huanxin.png');
+		}
+
+		.company-ronglian {
+			.bg('../img/company-ronglian.png');
+		}
+
+		.company-qiniu {
+			.bg('../img/company-qiniu.png');
+		}
+
+	}
+
+}
+
+/* 友情链接 */
+.link-list {
+	overflow: hidden;
+	margin-top: 100px;
+	background-color: #fff;
+
+	h1 {
+		margin: 28px 0;
+		font-size: 18px;
+		text-align: center;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+	}
+
+	li {
+		margin-right: 30px;
+		margin-bottom: 10px;
+
+		a {
+			padding-bottom: 5px;
+			color: #999;
+		}
+
+		a:hover {
+			border-bottom: 1px solid #26a26f;
+		}
+
+	}
+
+}

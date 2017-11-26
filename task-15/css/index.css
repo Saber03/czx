@@ -1,0 +1,208 @@
+@import url(header.css);
+@import url(slider.css);
+@import url(footer.css);
+main {
+  background-color: #fafafa;
+}
+/* 高效·规范·人脉 */
+.summary {
+  overflow: hidden;
+  margin-top: 100px;
+}
+.summary .effective,
+.summary .ruler,
+.summary .relation,
+.summary .count {
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  padding: 60px 10px 0 10px;
+}
+@media screen and (max-width: 767px) {
+  .summary .effective,
+  .summary .ruler,
+  .summary .relation,
+  .summary .count {
+    float: none;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+}
+.summary .effective p,
+.summary .ruler p,
+.summary .relation p,
+.summary .count p {
+  font-size: 18px;
+  text-align: center;
+}
+.summary .effective span,
+.summary .ruler span,
+.summary .relation span,
+.summary .count span {
+  font-size: 16px;
+  color: #999;
+}
+.summary .effective {
+  background: url('../img/img-wrap-1.png') no-repeat center top;
+}
+.summary .ruler {
+  background: url('../img/img-wrap-2.png') no-repeat center top;
+}
+.summary .relation {
+  border-right: 1px dashed #999;
+  background: url('../img/img-wrap-3.png') no-repeat center top;
+}
+@media screen and (max-width: 767px) {
+  .summary .relation {
+    border-right: 0;
+  }
+}
+.summary .count p {
+  padding-left: 26px;
+  text-align: left;
+  color: #26a26f;
+  background: url('../img/img-wrap-4.png') no-repeat center top;
+  background-position: left center;
+}
+@media screen and (max-width: 767px) {
+  .summary .count p {
+    display: inline-block;
+  }
+}
+.summary .count div:first-child p {
+  margin-top: -18px;
+}
+/* 如何学习 */
+.study {
+  margin-top: 100px;
+}
+.study h1 {
+  font-size: 18px;
+  text-align: center;
+}
+.study .study-step {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.study .study-step .step {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 25%;
+  margin: 45px 0;
+}
+@media screen and (max-width: 991px) {
+  .study .study-step .step {
+    width: 100%;
+  }
+}
+.study .study-step .step span:first-child {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(153, 153, 153, 0.5);
+  color: #26a26f;
+  background-color: #fff;
+}
+.study .study-step .step span:nth-child(2) {
+  overflow: hidden;
+  text-align: center;
+  color: #999;
+}
+.study .study-step .step span:last-child {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 33px;
+  height: 33px;
+  margin-left: 10px;
+  background: url(../img/next-arrow.png) no-repeat 95% center;
+}
+/* 战略合作伙伴 */
+.cooperation {
+  margin-top: 100px;
+}
+.cooperation h1 {
+  margin: 0 0 62px 0;
+  font-size: 18px;
+  text-align: center;
+}
+.cooperation .company-list {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 991px) {
+  .cooperation .company-list {
+    flex-direction: column;
+  }
+}
+.cooperation .company-list a {
+  flex-shrink: 0;
+  width: 20%;
+  height: 178px;
+  background-color: #fff !important;
+  cursor: pointer;
+}
+@media screen and (max-width: 991px) {
+  .cooperation .company-list a {
+    width: 100%;
+  }
+}
+.cooperation .company-list a:hover {
+  z-index: 1;
+  box-shadow: 0 0 15px rgba(153, 153, 153, 0.5);
+}
+.cooperation .company-list .company-alibaba {
+  background: url('../img/company-alibaba.png') no-repeat center;
+}
+.cooperation .company-list .company-jinshanyun {
+  background: url('../img/company-jinshanyun.png') no-repeat center;
+}
+.cooperation .company-list .company-huanxin {
+  background: url('../img/company-huanxin.png') no-repeat center;
+}
+.cooperation .company-list .company-ronglian {
+  background: url('../img/company-ronglian.png') no-repeat center;
+}
+.cooperation .company-list .company-qiniu {
+  background: url('../img/company-qiniu.png') no-repeat center;
+}
+/* 友情链接 */
+.link-list {
+  overflow: hidden;
+  margin-top: 100px;
+  background-color: #fff;
+}
+.link-list h1 {
+  margin: 28px 0;
+  font-size: 18px;
+  text-align: center;
+}
+.link-list ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.link-list li {
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+.link-list li a {
+  padding-bottom: 5px;
+  color: #999;
+}
+.link-list li a:hover {
+  border-bottom: 1px solid #26a26f;
+}
