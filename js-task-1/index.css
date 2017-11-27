@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+}
+
+.squares {
+	overflow: hidden;
+}
+
+.square {
+	float: left;
+	width: 30%;
+	height: 0;
+	margin:1.66%;
+	padding-bottom: 30%;
+	border-radius: 10%;
+	background-color: #fda40e;
+}
+
+.start, .end {
+	box-sizing: border-box;
+	width: 80%;
+	height: 50px;
+	margin: 20px auto;
+	border: 1px solid #fda40e;
+	border-radius: 10px;
+	line-height: 50px;
+	text-align: center;
+}
