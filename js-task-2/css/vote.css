@@ -1,0 +1,155 @@
+header .btn-list {
+  width: 0.4rem;
+  height: 100%;
+  background-image: url('../img/btn-list.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+header .title {
+  font-size: 0.34rem;
+  color: #fff;
+}
+header .btn-close {
+  width: 0.36rem;
+  height: 100%;
+  background-image: url('../img/btn-close.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.tips .tips-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 0.82rem;
+  padding-left: 0.4rem;
+  padding-right: 0.2rem;
+  font-size: 0.26rem;
+  background-color: #b9e9f5;
+}
+.tips .tips-1 p {
+  margin: 0;
+  font-size: 0.26rem;
+}
+.tips .tips-1 .music {
+  width: 0.52rem;
+  height: 0.52rem;
+  background-image: url('../img/audio-btn.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.tips .tips-2 {
+  position: relative;
+  height: 0.82rem;
+  padding-left: 0.7rem;
+  font-size: 0.24rem;
+  line-height: 0.82rem;
+  color: #fff;
+  background-color: #29bde0;
+}
+.tips .tips-2:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0.7rem;
+  align-self: flex-start;
+  width: 0;
+  height: 0;
+  border: 0.15rem solid transparent;
+  border-top: 0.15rem solid #b9e9f5;
+}
+main {
+  background-color: #29bde0;
+}
+.gamer-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.2rem 0;
+}
+.gamer-list .item {
+  width: 1.36rem;
+  margin-bottom: 0.22rem;
+}
+.gamer-list .item:hover .label {
+  visibility: visible;
+}
+.gamer-list .head {
+  display: flex;
+  flex-direction: column;
+  height: 1.36rem;
+  margin-bottom: 0.22rem;
+  border: 0.05rem solid #fff;
+  background-color: #f5c97b;
+}
+.gamer-list .head p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.gamer-list .head .name {
+  height: 80%;
+  font-size: 0.3rem;
+  color: #333;
+}
+.gamer-list .head .number {
+  height: 20%;
+  font-size: 0.22rem;
+  color: #fff;
+  background-color: #83b09a;
+}
+.gamer-list .label {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+.gamer-list .label a {
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: #fff;
+}
+.gamer-list .label .label-1 {
+  background-image: url('../img/label-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.gamer-list .label .label-2 {
+  background-image: url('../img/label-2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.gamer-list .label .label-3 {
+  background-image: url('../img/label-3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.gamer-list .label .label-4 {
+  background-image: url('../img/label-4.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+footer {
+  justify-content: center;
+}
+footer .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 76%;
+  height: 100%;
+  font-size: 0.4rem;
+  color: #fff;
+  background-color: #fbb435;
+  cursor: pointer;
+}

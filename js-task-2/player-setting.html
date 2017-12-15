@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/noemalize.css">
+    <script src="./js/rootfont.js"></script>
+    <link rel="stylesheet" href="./css/player-setting.css">
+    <title>player-setting</title>
+</head>
+
+<body>
+    <header>
+        <div></div>
+        <h1>参数设置</h1>
+        <div></div>
+    </header>
+    <main>
+        <div class="player">
+            <p>
+                <span>玩<br>家<br>配<br>比</span>
+            </p>
+            <div>
+                <div class="player-list">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="setting-btn"><span>点击设置</span></div>
+            </div>
+        </div>
+        <div class="key-word">
+        	<input type="text" placeholder="平民词组" class="civilian">
+        	<input type="text" placeholder="杀手词组" class="killer">
+        </div>
+        <div class="player-number">
+        	<div class="number">玩家人数：<input type="text" value="6">人</div>
+        	<input type="range" min="6" max="18" step="1" Value="6" class="slider">
+        </div>
+        <div class="start-btn">去发牌</div>
+    </main>
+    <script src="./js/player-setting.js"></script>
+</body>
+</html>

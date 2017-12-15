@@ -1,0 +1,90 @@
+.bg(@bgi:'../img/btn-close.png') {
+	background-image: url(@bgi);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+header {
+	.btn-list {
+		width: 0.4rem;
+		height: 100%;
+		.bg('../img/btn-list.png');
+	}
+
+	.title {
+		font-size: 0.34rem;
+		color: #fff;
+	}
+
+	.btn-close {
+		width: 0.36rem;
+		height: 100%;
+		.bg('../img/btn-close.png');
+	}
+
+}
+
+main {
+	background-color: #29bde0;
+}
+
+.player-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0.2rem 0;
+
+	.item {
+		width: 1.36rem;
+		margin-bottom: 0.22rem;
+	}
+
+	.head {
+		display: flex;
+		flex-direction: column;
+		height: 1.36rem;
+		margin-bottom: 0.22rem;
+		border: 0.05rem solid #fff;
+		background-color: #f5c97b;
+
+		p {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+		}
+
+		.player-name {
+			height: 80%;
+			font-size: 0.3rem;
+			color: #333;
+		}
+
+		.player-number {
+			height: 20%;
+			font-size: 0.22rem;
+			color: #fff;
+			background-color: #83b09a;
+		}
+
+	}
+
+}
+
+footer {
+	justify-content: center;
+
+	.submit {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 76%;
+		height: 100%;
+		font-size: 0.4rem;
+		color: #fff;
+		background-color: #fbb435;
+	}
+
+}

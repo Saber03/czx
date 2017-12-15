@@ -1,0 +1,145 @@
+.transform(@deg:0deg) {
+	transform: rotate(@deg);
+	-ms-transform: rotate(@deg); 	/* IE 9 */
+	-moz-transform: rotate(@deg); 	/* Firefox */
+	-webkit-transform: rotate(@deg); /* Safari 和 Chrome */
+	-o-transform: rotate(@deg); 	/* Opera */
+}
+
+body {
+	background-color: #29bde0;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 0.87rem;
+	padding: 0 0.22rem;
+	border-bottom: 1px solid #74d4eb;
+
+	.back-btn {
+		box-sizing: border-box;
+		width: 0.3rem;
+		height: 0.3rem;
+		border-top: 3px solid #fff;
+		border-left: 3px solid #fff;
+		background-color: transparent;
+		cursor: pointer;
+		.transform(-45deg)
+	}
+
+	h1 {
+		font-size: 0.34rem;
+		color: #fff;
+	}
+
+	.close {
+		display: flex;
+		align-items: center;
+		height: 0.48rem;
+		cursor: pointer;
+
+		span {
+			display: block;
+			width: 0.48rem;
+			border-top: 2px solid #fff;
+			.transform(-45deg)
+		}
+
+		span::after {
+			content: '';
+			display: block;
+			width: 0.48rem;
+			margin-top: -2px;
+			border-top: 2px solid #fff;
+			.transform(90deg)
+		}
+
+	}
+
+}
+
+main {
+	overflow: hidden;
+	height: 8.0rem;
+	border-bottom: 1px solid #74d4eb;
+}
+
+.watch {
+	position: relative;
+	width: 4.46rem;
+	height: 6.46rem;
+	margin: 0.8rem auto;
+	border: 4px solid #fff;
+	background-color: #ffedc5;
+
+	.player-id {
+		width: 0.68rem;
+		height: 0.68rem;
+		margin: -0.34rem auto 0 auto;
+		border: 2px solid #ffedc5;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 0.68rem;
+		background-color: #fff;
+	}
+
+	> img {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 3.0rem;
+		height: 3.0rem;
+		margin: -1.5rem 0 0 -1.5rem;
+		border-radius: 50%;
+		background: url(../img/watch-identity/watch.png) no-repeat center 0.3rem;
+		background-size: 2.6rem 2.86rem;
+		background-color: #fff;
+	}
+
+	.identity {
+		display: none;
+		img {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 3.0rem;
+			height: 3.0rem;
+			margin: -1.5rem 0 0 -1.5rem;
+			border-radius: 50%;
+			background: url(../img/watch-identity/identity.png) no-repeat center 0.3rem;
+			background-size: 1.48rem 1.95rem;
+			background-color: #fbb435;
+		}
+
+		p {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			font-size: 0.4rem;
+			text-align: center;
+			color: #29bde0;
+		}
+
+	}
+
+}
+
+footer {
+	.next-btn {
+		width: 80%;
+		height: 0.86rem;
+		margin: 0.6rem auto;
+		font-size: 0.4rem;
+		color: #fff;
+		line-height: 0.86rem;
+		text-align: center;
+		background-color: #fbb435;
+		cursor: pointer;
+	}
+
+}
