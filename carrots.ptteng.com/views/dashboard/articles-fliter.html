@@ -1,0 +1,38 @@
+<section>
+    <form class="form-inline" name="article-fliter" >
+        <div class="form-group">
+            <label for="article-title">标题：</label>
+            <input type="text" class="form-control" id="article-title" name="title" ng-model="articles.search.title">
+        </div>
+        <div class="form-group">
+            <label for="article-creator">创建者：</label>
+            <input type="text" class="form-control" id="article-author" name="author" ng-model="articles.search.author">
+        </div>
+        <br>
+        <br>
+        <div class="form-group">
+            <label>创建时间：</label>
+            <input date-range-picker class="form-control date-picker" type="text" ng-model="articles.datePicker.date" />
+        </div>
+        <div class="form-group">
+            <label for="article-state">状态：</label>
+            <select id="article-state" class="form-control" name="status" ng-model="articles.search.status">
+                <option value>全部</option>
+                <option value="1">草稿</option>
+                <option value="2">上线</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="article-type">类型：</label>
+            <select id="article-type" class="form-control" name="type" ng-model="articles.search.type">
+                <option value>全部</option>
+                <option value="0">首页</option>
+                <option value="1">找职位</option>
+                <option value="2">找精英</option>
+                <option value="3">行业大图</option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-danger" ng-click="articles.searchClean()">清空</button>
+        <button type="button" class="btn btn-success" ng-click="articles.searchArticles()">搜索</button>
+    </form>
+</section>

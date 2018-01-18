@@ -1,0 +1,67 @@
+.dashboard {
+  padding-top: 15px;
+}
+.carrots-nav {
+  height: 100%;
+  margin-right: -15px;
+  margin-bottom: 0;
+  border: 0;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .carrots-nav {
+    margin-right: 0;
+  }
+}
+.carrots-nav .navbar-header {
+  width: 100%;
+}
+.carrots-nav .navbar-header .navbar-brand {
+  width: 100%;
+  height: auto;
+  min-height: 60px;
+  font-size: 20px;
+  line-height: 30px;
+}
+@media screen and (max-width: 767px) {
+  .carrots-nav .navbar-header .navbar-brand {
+    width: auto;
+  }
+}
+.carrots-nav .list-items > ul > li {
+  width: 100%;
+}
+.carrots-nav .list-items > ul > li > a {
+  width: 100%;
+  /* height: auto; */
+  font-size: 18px;
+  line-height: 30px;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .carrots-nav .list-items > ul > li > a {
+    line-height: 40px;
+  }
+}
+.carrots-nav .list-items > ul > li > ul {
+  position: relative;
+  float: none;
+  min-width: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.carrots-nav .list-items > ul > li > ul a {
+  height: 50px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .carrots-nav .list-items > ul > li > ul a {
+    line-height: 40px !important;
+  }
+}

@@ -1,0 +1,15 @@
+<div class="login" ng-controller="LoginController as loginCtrl">
+    <div class="login-logo">
+        <img src="./img/login/login-logo.png" alt="login-logo">
+    </div>
+    <form name="loginForm" class="login-form" ng-submit="loginForm.$valid && loginCtrl.loginCheck(loginCtrl.user)" novalidate="novalidate">
+        <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="用户名" ng-model="loginCtrl.user.name" required>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="pwd" placeholder="密码" ng-model="loginCtrl.user.pwd" required>
+        </div>
+        <p ng-show="loginCtrl.showError" ng-bind="loginCtrl.errorMessage" id="error"></p>
+        <button type="submit" id="submit" class="btn btn-default" ng-disabled="loginForm.$invalid">登录</button>
+    </form>
+</div>

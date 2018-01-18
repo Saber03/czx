@@ -1,0 +1,81 @@
+﻿<div class="addArticle">
+    <div class="addArticle-head">
+        <h4>
+            <strong>新增Article</strong>
+        </h4>
+    </div>
+    <div class="addArticle-form">
+        <form name="addArticleForm" ng-controller="ArticleDetailController as artDetailCtrl" novalidate="novalidate">
+            <div class="form-group">
+                <label for="article.title" class="control-label">标题名称</label>
+                <input type="text" class="form-control" id="article.title" ng-model="artDetailCtrl.article.title" required>
+
+                <label for="article.type" class="control-label">类 型</label>
+                <select class="form-control" id="article.type" ng-model="artDetailCtrl.article.type" ng-options="option.value as option.type for option in artDetailCtrl.typeOptions"
+                    required>
+                </select>
+                <label ng-if="artDetailCtrl.article.type === 3" for="article.industry" class="control-label">行 业</label>
+                <select ng-if="artDetailCtrl.article.type === 3" class="form-control" id="article.industry" ng-model="artDetailCtrl.article.industry"
+                    ng-options="option.value as option.industry for option in artDetailCtrl.industryOptions" required>
+                </select>
+                <label for="wContent" class="control-label">说 明</label>
+                <div id="wContent" ng-if="artDetailCtrl.article.content" ng-model="artDetailCtrl.article.content" content-editable="true"></div>
+                <label for="article.url" class="control-label">跳转链接</label>
+                <input type="text" class="form-control" id="article.url" ng-model="artDetailCtrl.article.url" required>
+                <label for="article.picture" class="control-label">配 图</label>
+                <section>
+                    <label class="upImglabel btn btn-sm btn-primary" for="upImg">选择文件</label>
+                    <input id="upImg" class="hidden" type="file" accept="image/*" img-upload="artDetailCtrl.upImgFile">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            预览：
+                        </div>
+                        <div class="panel-body">
+                            <div class="thumbnail">
+                                <img ng-if="artDetailCtrl.article.img" ng-src="{{artDetailCtrl.article.img}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="active">
+                                <th>图片名</th>
+                                <th>文件大小</th>
+                                <th>进度</th>
+                                <th>成功</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td ng-bind="artDetailCtrl.upImgFile.name"></td>
+                                <td ng-bind="artDetailCtrl.upImgFile.size"></td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="artDetailCtrl.upProgress">
+                                        </div>
+                                    </div>
+                                    <span ng-bind="artDetailCtrl.upProgress.width"></span>
+                                </td>
+                                <td>
+                                    <i class="glyphicon glyphicon-ok" ng-show="artDetailCtrl.upProgress.width == '100%'"></i>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-success btn-xs" ng-click="artDetailCtrl.upLoadImg()" ng-disabled="artDetailCtrl.onUpProgress">
+                                        <span class="glyphicon glyphicon-upload"></span> 上传
+                                    </button>
+                                    <button type="button" class="btn btn-danger btn-xs" ng-click="artDetailCtrl.delImg()">
+                                        <span class="glyphicon glyphicon-trash"></span> 删除
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-success" ng-click="artDetailCtrl.articlePub()" ng-disabled="addArticleForm.$invalid">立即上线</button>
+                    <button type="button" class="btn btn-success" ng-click="artDetailCtrl.articleSave()" ng-disabled="addArticleForm.$invalid">存为草稿</button>
+                    <button type="button" class="btn btn-primary pull-right" ng-click="artDetailCtrl.articleCancel()">取消</button>
+                </section>
+            </div>
+        </form>
+    </div>
+</div>
